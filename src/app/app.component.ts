@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto';
+  dato: any = 15;
+  title: string = 'Mockup';
+  edad: number = 24;
+  pasaLaMateria: boolean = true;
+  contador: number = 0;
+  aumentar(){
+    this.contador=this.contador+1;
+  }
+  disminuir(){
+    this.contador=this.contador-1
+  }
+  multiplicarx2(){
+    this.contador=this.contador*2
+  }
+  division(){
+    this.contador=this.contador/2
+  }
+  resetear(){
+    this.contador=this.contador=0
+  }
+  esPar(numero:number):boolean {
+    if(numero % 2 === 0 ){
+      return true;
+    } else{return false;}
+  }
+  estudiantes:string[]=["Daniela","Walter","Romario","Natali","Luisa","Leidy","Alejandro"];
 }
