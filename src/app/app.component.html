@@ -50,4 +50,36 @@
   <span>
     {{estudiantes.sort()}}
   </span>
+  <br>
+  <br>
+  <h2>
+    {{animales[2].alimentacion}}
+  </h2>
+  <ul>
+    <li> {{animales[1].nombre}} </li>
+    <li> {{animales[2].nombre}} </li>
+  </ul>
+  <ul>
+    <li *ngFor = "let animal of animales">
+      {{animal.nombre}}
+    </li>
+  </ul>
+  <br>
+  <br>
+  <div *ngFor = "let animal of animales" class="targeta">
+    <img class="imagen" [src]="animal.imagen" >
+    <div class="datos">
+      <span> Nombre: {{animal.nombre}} </span>
+      <br>
+      <span>Peso: ({{animal.peso}})</span>
+      <br>
+      <span>Color: {{animal.color}} </span>
+      <span>Numero de patas: {{animal.numero_patas}}</span> 
+      <br>
+      <span>Alimentacion: {{animal.alimentacion}} </span>
+      <br>
+      <span>Vuela: {{animal.vuela}} </span>
+      
+    </div>
+  </div>
 </html>
