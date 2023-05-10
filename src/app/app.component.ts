@@ -117,79 +117,79 @@ export class AppComponent {
   
   
 
-    equipo: Equipo= {
-      nombre:"Selección de fútbol de Croacia",
-      pais:"Croacia",
-      nombre_alternativo:["Vatreni (Los Ardientes)"],
-      titulo_ganado:[
-        //en si Croacia no tiene titulos desde que se independizo de Yugoslavia, asi que pondre los titulos de yugoslavia.
-        {
-          nombre:"Copa Mundial: Tercer lugar en 1998"
-        },
-        {
-          nombre:" Copa mundial: Finalista en 2018"
-        },
-        {
-          nombre:"Eurocopa: cuartos de finales en 1996 y 2008"
-        }
-      ],
-      colores:["azul","rojob","blanco"],
-      nombre_capitan:"Luka Modric",
-      entrenador:"Zlatko Dalic",
-      logo:"https://logodownload.org/wp-content/uploads/2022/11/croatia-national-football-team-logo-0.png",
-      abreviacion:"CRO",
-      goleador:
-      {
-          nombre:"Davor Suker",
-          goles:45
-      },
-      estadio:[{
-        nombre:"Maksimir",
-        apodo:"El milagro del bosque Maksimir",
-        ubicacion:"Zagreb",
-        capacidad:	40000,
-      },
-      {
-        nombre:"Poljud",
-        apodo:"Starid Plac",
-        ubicacion:"Split",
-        capacidad: 35000,
-      },
-    ],
-    numero_jugadores:11,
-    jugadores:[
-      {
-        nombre:"Dominik",
-        apellido:"Livacovic",
-        edad:28,
-        altura:187,
-        lugar_nacimiento:"Zadar",
-        posicion:"portero",
-        numero:1,
-        club:"GNK Dinamo Zagreb",
-      },
-      {
-        nombre:"Lovro",
-        apellido:"Majer",
-        edad:25,
-        altura:178,
-        lugar_nacimiento:"Zagreb",
-        posicion:"Mediocentro ofensivo",
-        numero:21,
-        club:"Stade Rennais FC",
-      },
-      {
-        nombre:"",
-        apellido:"",
-        edad:,
-        altura:,
-        lugar_nacimiento:"",
-        posicion:"",
-        numero:,
-        club:"",
-      },
-    ],
+  //   equipo: Equipo= {
+  //     nombre:"Selección de fútbol de Croacia",
+  //     pais:"Croacia",
+  //     nombre_alternativo:["Vatreni (Los Ardientes)"],
+  //     titulo_ganado:[
+  //       //en si Croacia no tiene titulos desde que se independizo de Yugoslavia, asi que pondre los titulos de yugoslavia.
+  //       {
+  //         nombre:"Copa Mundial: Tercer lugar en 1998"
+  //       },
+  //       {
+  //         nombre:" Copa mundial: Finalista en 2018"
+  //       },
+  //       {
+  //         nombre:"Eurocopa: cuartos de finales en 1996 y 2008"
+  //       }
+  //     ],
+  //     colores:["azul","rojob","blanco"],
+  //     nombre_capitan:"Luka Modric",
+  //     entrenador:"Zlatko Dalic",
+  //     logo:"https://logodownload.org/wp-content/uploads/2022/11/croatia-national-football-team-logo-0.png",
+  //     abreviacion:"CRO",
+  //     goleador:
+  //     {
+  //         nombre:"Davor Suker",
+  //         goles:45
+  //     },
+  //     estadio:[{
+  //       nombre:"Maksimir",
+  //       apodo:"El milagro del bosque Maksimir",
+  //       ubicacion:"Zagreb",
+  //       capacidad:	40000,
+  //     },
+  //     {
+  //       nombre:"Poljud",
+  //       apodo:"Starid Plac",
+  //       ubicacion:"Split",
+  //       capacidad: 35000,
+  //     },
+  //   ],
+  //   numero_jugadores:11,
+  //   jugadores:[
+  //     {
+  //       nombre:"Dominik",
+  //       apellido:"Livacovic",
+  //       edad:28,
+  //       altura:187,
+  //       lugar_nacimiento:"Zadar",
+  //       posicion:"portero",
+  //       numero:1,
+  //       club:"GNK Dinamo Zagreb",
+  //     },
+  //     {
+  //       nombre:"Lovro",
+  //       apellido:"Majer",
+  //       edad:25,
+  //       altura:178,
+  //       lugar_nacimiento:"Zagreb",
+  //       posicion:"Mediocentro ofensivo",
+  //       numero:21,
+  //       club:"Stade Rennais FC",
+  //     },
+  //     {
+  //       nombre:"",
+  //       apellido:"",
+  //       edad:,
+  //       altura:,
+  //       lugar_nacimiento:"",
+  //       posicion:"",
+  //       numero:,
+  //       club:"",
+  //     },
+  //   ],
 
-  }
+  // }
 }
 
