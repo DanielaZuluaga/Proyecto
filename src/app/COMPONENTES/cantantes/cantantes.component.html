@@ -1,1 +1,27 @@
+
+
+
 <h2>componenete cantantes</h2>
+
+
+
+    <div class="datos">
+      <br>
+        <p>nombre</p> <input class="tarjetas1" [(ngModel)]="inputNombre" type="text" >
+        <p>edad</p> <input class="tarjetas1" [(ngModel)]="inputEdad"  type="number"  > 
+        <input type="checkbox" class="tarjetas1" [(ngModel)]="inputVivo"> Vivo?
+        <br>
+        <br>
+        <button (click)="agregarCantante()">Agregar</button>
+        
+    
+      
+    </div>
+
+  <div class="cantantes">
+    <div class="chip"  *ngFor="let cantante of cantantes">
+        <div class="chip-head" [class.muerto]="cantante.vivo==false">{{cantante.edad}}</div>
+        <div class="chip-content">{{cantante.nombre}}</div>
+      </div>
+  </div>
+<div>

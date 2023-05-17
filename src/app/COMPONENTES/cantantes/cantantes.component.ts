@@ -11,6 +11,13 @@ import { Cantante } from 'src/app/models/cantante.model';
 
 export class CantantesComponent implements OnInit {
 
+  inputNombre:string="";
+  inputEdad:number=0;
+  inputVivo=false;
+
+
+
+
   cantantes:Cantante[] = [
     {
         nombre:"Freddy Mercury",
@@ -63,6 +70,8 @@ export class CantantesComponent implements OnInit {
       vivo:false,
     },
   ]
+
+  
     
 
 
@@ -111,7 +120,30 @@ export class CantantesComponent implements OnInit {
 
     console.log(nombres);
 
+    
 
+  }
+  agregarCantante(){
+    console.log("click funciona")
+    /** LET se usa para crear un objeto nuevo*/
+    let nuevoCantante:Cantante ={
+      /**estas son las variables que ya tengo, luego le pongo THIS.inputBLABLABLA*/
+      nombre:this.inputNombre,
+      edad:this.inputEdad,
+      vivo:this.inputVivo,
+      
+    }
+    if (this.inputNombre>"",this.inputEdad>0){
+      (this.inputEdad>0);
+    }
+    this.cantantes.push(nuevoCantante);
+    this.limpiar();
+  }
+  
+  limpiar() {
+    this.inputNombre="";
+    this.inputEdad=0;
+    this.inputVivo=false;
   }
 }
 
